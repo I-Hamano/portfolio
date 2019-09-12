@@ -1,1 +1,138 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>シングルページレイアウト</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">
+     function sample() {
+　　　window.scrollTo(0,0);
+　　}
+  </script>
+</head>
+<body>
+  <header class="header">
+    <p class="site-title-sub">My portfolio</p>
+    <h1 class="site-title">HI, MY NAME IS<br>IKUYA HAMANO</h1>
+    <p class="site-description">Please check out some of my information.</p>
+    <div class="buttons">
+      <a class="button" href="#about">LEARN MORE</a>
+      <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+    </div>
+  </header>
+  <section class="about" id="about">
+    <h2 class="heading">ABOUT ME</h2>
+    <p class="about-text">
+      はじめまして、現在はホテルマンとして勤務する傍ら<br>
+      プログラミングの勉強をしてIT業界の転職を目指しています。
+    </p>
+    <p class="about-text">
+      このサイトは私の経歴を紹介するポートフォリオです。<br>
+      使用言語はHTML/CSS JavaScript(一部)です。
+    </p>
+  </section>
+  <section class="works">
+    <h2 class="heading">LEARNDED</h2>
+    <div class="works-wrapper">
+      <div class="work-box tree">
+      <img class="work-image" src="images/tree.jpg">
+      <div class="work-description">
+          <div class="work-description-in">
+            <p class="work-text">
+              <h3 class="work-title"><span class="orange">HTML/CSS</span><br></h3>
+              学習ツール：progate<br>
+              本：初めて学ぶHTML/CSS<br>
+               　　HTML/CSSモダンコーティング<br>
+              <a href="#" class="button button-ghost">ABOUT ME</a>
+            </p>
+          </div>
+      </div>
+      </div>
+    <div class="work-box building">
+      <img class="work-image" src="images/building.jpg">
+      <div class="work-description">
+        <div class="work-description-in">
+          <p class="work-text">
+             <h3 class="work-title"><span class="red">Ruby</span><br></h3>
+              学習ツール：progate<br>
+              参考サイト様：Qiita<br>
+              <a href="#" class="button button-ghost">ABOUT ME</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="work-box lake">
+        <img class="work-image" src="images/lake.jpg">
+        <div class="work-description">
+          <div class="work-description-in">
+            <p class="work-text">
+              <h3 class="work-title"><span class="lime">PHP</span><br></h3>
+              学習ツール：progate<br>
+              本：いきなりはじめる PHP<br>
+              <a href="#" class="button button-ghost">ABOUT ME</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="work-box sky">
+        <img class="work-image" src="images/sky.jpg">
+        <div class="work-description">
+          <div class="work-description-in">
+            <p class="work-text">
+              <h3 class="work-title"><span class="aqua">JavaScript</span><br></h3>
+              学習ツール：progate<br>
+              参考サイト様：sejuku.com 等<br>
+              <a href="#" class="button button-ghost">ABOUT ME</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills">
+    <h2 class="heading">MY SKILLS</h2>
+    <div class="skills-wrapper">
+      <div class="skill-box">
+        <i class="skill-icon fa fa-lightbulb-o"></i>
+        <div class="skill-title">IDEA</div>
+        <p class="skill-text">
+          先行者利益を考えることが好きです。<br>
+        </p>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fa fa-paint-brush"></i>
+        <div class="skill-title">READING</div>
+        <p class="skill-text">
+          毎日技術書を読書します。<br>
+        </p>
+      </div>
+      <div class="skill-box">
+        <i class="skill-icon fa fa-code"></i>
+        <div class="skill-title">CORDER</div>
+        <p class="skill-text">
+          毎日コードを書いています。<br>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 class="heading">CONTACT</h2>
+    <form class="contact-form">
+    <input type="text" name="name" placeholder="NAME">
+    <textarea name="message" placeholder="MESSAGE"></textarea>
+    <input type="submit" value="SEND">
+    </form>
+  </section>
+  <footer class="footer">
+    <div class="btn">
+    <a onclick="sample()">TOPに戻る
+    </div>
+  </footer>
+  <script src="lib/placeholders.min.js"></script>
+</body>
+</html>
